@@ -4,7 +4,7 @@
 %define _ve_prefix  /opt/nec/ve
 
 Name: veosinfo
-Version: 2.1.1
+Version: 2.3.0
 Release: 1%{?dist}
 Summary: RPM library to interact with VEOS and VE specific 'sysfs'
 Group: System Environment/Libraries
