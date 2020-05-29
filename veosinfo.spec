@@ -4,7 +4,7 @@
 %define _ve_prefix  /opt/nec/ve
 
 Name: veosinfo
-Version: 2.3.0
+Version: 2.5.0
 Release: 1%{?dist}
 Summary: RPM library to interact with VEOS and VE specific 'sysfs'
 Group: System Environment/Libraries
@@ -48,7 +48,6 @@ Header files for the RPM Library.
 
 %build
 ./autogen.sh
-export CFLAGS="-I%{_prefix}/include"
 %configure --prefix=%{_prefix} --localstatedir=%{_localstatedir} --sysconfdir=%{_sysconfdir} --with-ve-prefix=%{_ve_prefix}
 
 make CFLAGS="%{optflags} $CFLAGS"
