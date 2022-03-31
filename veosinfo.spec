@@ -4,7 +4,7 @@
 %define _ve_prefix  /opt/nec/ve
 
 Name: veosinfo
-Version: 2.9.0
+Version: 2.11.0
 Release: 1%{?dist}
 Summary: RPM library to interact with VEOS and VE specific 'sysfs'
 Group: System Environment/Libraries
@@ -19,7 +19,8 @@ Requires: libyaml
 
 BuildRequires: log4c-devel
 BuildRequires: systemd-devel
-BuildRequires: veos-devel
+BuildRequires: veos >= 2.11
+BuildRequires: veos-devel >= 2.11
 BuildRequires: libtool
 BuildRequires: autoconf
 BuildRequires: automake
