@@ -1,10 +1,10 @@
 %define _prefix /opt/nec/ve/veos
 %define _localstatedir /var/opt/nec/ve/veos
-%define _sysconfdir  /etc/opt/nec/ve
+%define _sysconfdir  /etc/opt/nec
 %define _ve_prefix  /opt/nec/ve
 
-Name: veosinfo
-Version: 2.11.0
+Name: veosinfo3
+Version: 3.1.0
 Release: 1%{?dist}
 Summary: RPM library to interact with VEOS and VE specific 'sysfs'
 Group: System Environment/Libraries
@@ -40,6 +40,7 @@ Summary: Development files for RPM library
 Group: System Environment/Libraries
 Requires: %{name} = %{version}-%{release}
 Provides: %{_prefix}/include/veosinfo.h
+Conflicts: veosinfo-devel
 
 %description devel
 Header files for the RPM Library.
