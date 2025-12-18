@@ -1,10 +1,13 @@
+# rpmbuild tries to run perl in /opt/nec/ve/bin/ and fails to get the perl version.
+# To avoid this, specify the path to perl in the spec file.
+%global __perl /usr/bin/perl
 %define _prefix /opt/nec/ve/veos
 %define _localstatedir /var/opt/nec/ve/veos
 %define _sysconfdir  /etc/opt/nec
 %define _ve_prefix  /opt/nec/ve
 
 Name: veosinfo3
-Version: 3.3.0
+Version: 3.6.0
 Release: 1%{?dist}
 Summary: RPM library to interact with VEOS and VE specific 'sysfs'
 Group: System Environment/Libraries
